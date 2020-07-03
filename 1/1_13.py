@@ -2,7 +2,7 @@ class Solution:
     r"""
     1.13 通过某个关键字排序一个字典列表
 
-    使用operater模块的itemgetter方法
+    使用operater模块的itemgetter类（若是对象，可使用attrgetter类）
     >>> l = [{"id": 1, "name": "c"}, {"id": 2, "name": "b"}, {"id": 3, "name": "a"}]
     >>> Solution.solve(l)
     [{'id': 3, 'name': 'a'}, {'id': 2, 'name': 'b'}, {'id': 1, 'name': 'c'}]

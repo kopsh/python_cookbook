@@ -22,7 +22,7 @@
 ### 5 文件与IO
 * 5.3 使用其他分隔符或行终止符打印 (print(*arg, sep=',', end='!'))
 * 5.6 字符串的I/O操作（io.String/ByteIO，模拟文件对象）
-* 5.8 固定大小记录的文件迭代（iter(functools.patial(f.read, SIZE), b'')）
+* 5.8 固定大小记录的文件迭代（iter(functools.partial(f.read, SIZE), b'')）
 * 5.10 内存映射的二进制文件（mmap）
 * 5.19 创建临时文件和文件夹（tempfile）
 * 5.21 序列化Python对象（pickle）
@@ -52,3 +52,12 @@
 * 8.23 循环引用数据结构的内存管理（创建weakref消除循环引用）
 * 8.24 让类支持比较操作（functools.total_ordering，只需定义lt与ge即可实现全部比较）
 * 8.25 创建缓存实例（weakref.WeakValueDictionary）
+### 9 元编程
+* 9.1 在函数上添加包装器（装饰器）
+* 9.2 创建装饰器时保留函数元信息（functools.wrap）
+* 9.3 解除一个装饰器（__wrapper)
+* 9.5 可自定义属性的装饰器（nolocal）
+* 9.6 带可选参数的装饰器
+* 9.7 利用装饰器强制函数上的类型检查（inspect.signature 以及 bind_partial）
+* 9.9 将装饰器定义为类
+* 9.13 使用元类控制实例的创建
